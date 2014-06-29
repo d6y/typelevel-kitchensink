@@ -1,6 +1,6 @@
 name := "Type Level Kitchen Sink"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.1"
 
 scalacOptions ++= Seq(
   "-deprecation", 
@@ -29,10 +29,8 @@ libraryDependencies ++= Seq(
 libraryDependencies += "org.scalaz.stream" %% "scalaz-stream" % "0.4.1"
 
 
-// Note that for Scala 2.10.4 you must provide an explicit Scala version suffix to your shapeless dependency:
-
 libraryDependencies ++= Seq(
-  "com.chuusai" % "shapeless_2.10.4" % "2.0.0"
+  "com.chuusai" %% "shapeless" % "2.0.0"
 )
 
 libraryDependencies += "org.spire-math" %% "spire" % "0.7.5"
