@@ -16,14 +16,14 @@ resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repos
 val scalazVersion = "7.0.6"
 
 libraryDependencies ++= Seq(
-  "org.scalaz" %% "scalaz-core" 				% scalazVersion,
-  "org.scalaz" %% "scalaz-concurrent" 			% scalazVersion,
-  "org.scalaz" %% "scalaz-xml" 					% scalazVersion,
-  "org.scalaz" %% "scalaz-iteratee" 			% scalazVersion,
-  "org.scalaz" %% "scalaz-typelevel"			% scalazVersion,
-  "org.scalaz" %% "scalaz-effect" 				% scalazVersion,
-  "org.scalaz" %% "scalaz-scalacheck-binding" 	% scalazVersion,
-  "org.scalaz" %% "scalaz-iterv" 				% scalazVersion
+  "org.scalaz" %% "scalaz-core"               % scalazVersion,
+  "org.scalaz" %% "scalaz-concurrent"         % scalazVersion,
+  "org.scalaz" %% "scalaz-xml"                % scalazVersion,
+  "org.scalaz" %% "scalaz-iteratee"           % scalazVersion,
+  "org.scalaz" %% "scalaz-typelevel"          % scalazVersion,
+  "org.scalaz" %% "scalaz-effect"             % scalazVersion,
+  "org.scalaz" %% "scalaz-scalacheck-binding" % scalazVersion,
+  "org.scalaz" %% "scalaz-iterv"              % scalazVersion
 )
 
 libraryDependencies += "org.scalaz.stream" %% "scalaz-stream" % "0.4.1"
@@ -38,6 +38,15 @@ libraryDependencies ++= Seq(
 libraryDependencies += "org.spire-math" %% "spire" % "0.7.5"
 
 libraryDependencies +=  "io.argonaut" %% "argonaut" % "6.0.4"
+
+val monocleVersion = "0.4.0"
+
+libraryDependencies ++= Seq(
+  "com.github.julien-truffaut"  %%  "monocle-core"    % monocleVersion,
+  "com.github.julien-truffaut"  %%  "monocle-generic" % monocleVersion,
+  "com.github.julien-truffaut"  %%  "monocle-macro"   % monocleVersion,
+  "com.github.julien-truffaut"  %%  "monocle-law"     % monocleVersion % "test"
+)
 
 
 libraryDependencies ++= Seq(
